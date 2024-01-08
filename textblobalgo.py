@@ -23,7 +23,11 @@ def getSentiment(userText):
     image = Image.open('./images/negative.png')
   else:
     image = Image.open('./images/neutral.png')
-    
+  col1, col2, col3 = st.columns(3)
+  col1.metric("Polarity", polarity, None)
+  col2.metric("Subjectivity", subj, None)
+  col3.metric("Result", status, None)
+  st.image(image, caption=status)
 
 def getPolarity(userText):
   tb = TextBlob(userText)
