@@ -1,6 +1,7 @@
 from textblob import TextBlob
 import streamlit as st
 import streamlit.components.vl as components
+from PIP import Image
 
 #Create user defined function
 def displayPage():
@@ -17,7 +18,12 @@ def displayPage():
 def getSentiment(userText):
   polarity, subj, status = getPolarity(userText)
   if (status == "Positive"):
-    image
+    image = Image.open('./images/positive.png')
+  elif (status == 'Negative'):
+    image = Image.open('./images/negative.png')
+  else:
+    image = Image.open('./images/neutral.png')
+    
 
 def getPolarity(userText):
   tb = TextBlob(userText)
