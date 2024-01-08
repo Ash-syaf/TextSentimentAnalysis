@@ -1,7 +1,7 @@
 from textblob import TextBlob
 import streamlit as st
 import streamlit.components.v1 as components
-from PIP import Image
+from PIL import Image
 
 #Create user defined function
 def displayPage():
