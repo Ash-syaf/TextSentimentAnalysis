@@ -1,4 +1,7 @@
 streamlit == 1.8.1
 textblob
+text2emotion == 0.0.5
 streamlit-option-menu
 Pillow
+streamlit_extra_components
+plotly
