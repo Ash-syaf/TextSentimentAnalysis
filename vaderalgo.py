@@ -4,6 +4,7 @@ from PIL import Image
 import nltk
 nltk.download('vader_lexicon')
 from nltk.sentiment.vader import SentimentIntensityAnalysis
+sentiment = SentimentIntensityAnalyzer()
 
 def displayPage():
   st.subheader("Text Analysis using VADER")
@@ -30,7 +31,7 @@ def getSentiments(userText):
   st.image(image, caption=status1)
 
 def getVaderscore(userText):
-  vd = SentimentIntensityAnalyzer().polarity_scores(userText)
+  vd = sentiment.polarity_scores(userText)
   compoundscore = vd['compound']
   positivescore = vd['pos']
   negativescore = vd['neg']
