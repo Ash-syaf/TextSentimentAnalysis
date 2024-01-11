@@ -2,12 +2,12 @@ import streamlit as st
 import streamlit.components.v1 as components
 from PIL import Image
 import nltk
-import nltk.data
+#import nltk.data
 nltk.download('vader_lexicon')
-#from nltk.sentiment.vader import SentimentIntensityAnalysis
+from nltk.sentiment.vader import SentimentIntensityAnalysis
+#from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 #sentiment = SentimentIntensityAnalyzer()
-from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
-sentiment = SentimentIntensityAnalyzer()
+
 
 def displayPage():
   st.subheader("Text Analysis using VADER")
