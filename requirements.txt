@@ -5,3 +5,4 @@ streamlit-option-menu
 Pillow
 plotly
 vaderSentiment
+nltk
