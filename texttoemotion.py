@@ -15,7 +15,7 @@ def displayPage():
       getSentiment(userText)
 
 def getSentiment(userText):
-  emotion = te.get_emotion(userText)
+  emotion = te.get_emotion("Happy")
   #emotion1 = dict()
   #col1, col2, col3, col4, col5 = st.columns(5)
   #col1.metric("Happy1", None)
