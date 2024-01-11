@@ -1,7 +1,7 @@
 import streamlit as st
 import streamlit.components.v1 as components
 from PIL import Image
-import texttoemotion as te
+import text2emotion as te
 import plotly.graph_objects as go
 
 def displayPage():
