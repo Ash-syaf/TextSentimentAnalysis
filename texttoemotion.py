@@ -14,7 +14,7 @@ def displayPage():
       st.components.v1.html("""<h3 style="color:#0284c7; font-family:Source Sans Pro,sans-serif; font-size:28px; margin-bottom:8px; margin-top:55px;">RESULT</h3>""", height=150)
       getSentiment(userText)
 
-def getSentiment():
+def getSentiment(userText):
   emotion1 = dict(te.get_emotion(userText))
   col1, col2, col3, col4, col5 = st.columns(5)
   col1.metric("Happy", emotion1['Happy'], None)
