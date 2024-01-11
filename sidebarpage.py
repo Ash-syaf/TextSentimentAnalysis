@@ -9,7 +9,7 @@ def show():
   with st.sidebar:
     selectedoption = option_menu(
       menu_title = "Select the type of Machine Learning Analysis for Text Sentiment Analysis",
-      options = ["TextBlob Analysis", "Text2Emotion Analysis", "VADER Sentiment Analysis"],
+      options = ["TextBlob Analysis", "VADER Sentiment Analysis"],
       default_index =0,)
     return selectedoption
     
