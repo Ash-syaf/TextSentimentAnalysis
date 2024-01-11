@@ -2,6 +2,7 @@ import streamlit as st
 import streamlit.components.v1 as components
 from PIL import Image
 import nltk
+import nltk.data
 nltk.download('vader_lexicon')
 #from nltk.sentiment.vader import SentimentIntensityAnalysis
 #sentiment = SentimentIntensityAnalyzer()
