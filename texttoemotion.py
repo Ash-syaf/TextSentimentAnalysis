@@ -17,11 +17,11 @@ def displayPage():
 def getSentiment(userText):
   emotion1 = dict(te.get_emotion(userText))
   col1, col2, col3, col4, col5 = st.columns(5)
-  col1.metric("Happy", emotion1['Happy'], None)
-  col2.metric("Sad", emotion1['Sad'], None)
-  col3.metric("Angry", emotion1['Angry'], None)
-  col4.metric("Fear", emotion1['Fear'], None)
-  col5.metric("Surprise", emotion1['Surprise'], None)
+  col1.metric("Happy1", None)
+  col2.metric("Sad", None)
+  col3.metric("Angry", None)
+  col4.metric("Fear", None)
+  col5.metric("Surprise", None)
   print(emotion1)
   plotBar(list(emotion1.keys()), list(emotion1.values()))
 
