@@ -15,14 +15,16 @@ def displayPage():
       getSentiment(userText)
 
 def getSentiment(userText):
-  emotion1 = dict(te.get_emotion(userText))
+  emotion = te.get_emotion(userText)
+  #emotion1 = dict()
   #col1, col2, col3, col4, col5 = st.columns(5)
   #col1.metric("Happy1", None)
   #col2.metric("Sad", None)
   #col3.metric("Angry", None)
   #col4.metric("Fear", None)
   #col5.metric("Surprise", None)
-  print(emotion1)
+  #print(emotion1)
+  print(emotion)
   #plotBar(list(emotion1.keys()), list(emotion1.values()))
 
 def plotBar(labels, values):
