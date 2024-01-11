@@ -5,6 +5,7 @@ from PIL import Image
 #import nltk.data
 #nltk.download('vader_lexicon')
 #from nltk.sentiment.vader import SentimentIntensityAnalysis
+import vaderSentiment
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 sentiment = SentimentIntensityAnalyzer()
 
