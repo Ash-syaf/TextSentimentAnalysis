@@ -4,4 +4,4 @@ text2emotion == 0.0.5
 streamlit-option-menu
 Pillow
 plotly
-nltk
+vaderSentiment
